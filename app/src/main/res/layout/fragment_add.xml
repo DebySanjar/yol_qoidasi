@@ -1,44 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:background="#2196F3"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#005CA1"
+        android:gravity="center"
+        android:letterSpacing="0.03"
+        android:text="Qo'shish"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:scaleType="centerCrop"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginVertical="15dp"
+        android:scaleType="centerInside"
         android:src="@drawable/ic_launcher_foreground" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/selectImageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Rasm tanlash" />
+        android:backgroundTint="@color/black"
+        android:text="Rasm tanlash"
+        app:cornerRadius="6dp" />
 
     <EditText
         android:id="@+id/titleEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Sarlavha" />
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_item"
+        android:hint="Sarlavha"
+        android:padding="10dp" />
 
     <EditText
         android:id="@+id/descEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Tavsif" />
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="17dp"
+        android:background="@drawable/bg_item"
+        android:hint="Tavsif"
+        android:padding="10dp" />
 
     <Spinner
         android:id="@+id/categorySpinner"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <Button
-        android:id="@+id/saveButton"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Saqlash" />
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/bg_item"
+        android:padding="10dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/saveButton"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/black"
+        android:text="Saqlash"
+        app:cornerRadius="7dp" />
 </LinearLayout>

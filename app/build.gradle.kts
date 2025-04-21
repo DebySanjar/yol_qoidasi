@@ -1,8 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     id("org.jetbrains.kotlin.android")
-    id("kotlin-kapt") // Room uchun qo'shildi
-    id("androidx.navigation.safeargs.kotlin") // Navigation Safe Args uchun qo'shildi
+    id("kotlin-kapt")
+    id("androidx.navigation.safeargs.kotlin")
 }
 
 android {
